@@ -1,14 +1,12 @@
 import "./App.css";
+import { HeaderTertiary } from "./components/typography/headers/tertiary-header/header-tertiary.component";
+
 import "./styles/style-variables.scss";
 
 function App() {
   return (
     <div className="App">
-      <h1
-        style={{ color: "var(--primary-color)", fontSize: "var(--large-text)" }}
-      >
-        Hello
-      </h1>
+      <HeaderTertiary />
     </div>
   );
 }
