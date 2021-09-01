@@ -1,12 +1,10 @@
 import React from "react";
 import "./header-secondary.styles.scss";
 
-export const HeaderSecondary = () => {
-  return <div className="header-large"></div>;
+export const HeaderSecondary = (props) => {
+  return <h2 className="header-medium">{props.text}</h2>;
 };
 
 HeaderSecondary.defaultProps = {
-  text: "Placeholder",
-  color: "var(--secondary-color)",
-  size: "var(--small-text)",
+  text: "Medium header",
 };

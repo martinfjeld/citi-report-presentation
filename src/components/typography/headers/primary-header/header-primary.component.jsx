@@ -1,12 +1,10 @@
 import React from "react";
 import "./header-primary.styles.scss";
 
-export const HeaderPrimary = () => {
-  return <div className="header-large"></div>;
+export const HeaderPrimary = (props) => {
+  return <h2 className="header-large">{props.text}</h2>;
 };
 
 HeaderPrimary.defaultProps = {
-  text: "Placeholder",
-  color: "var(--secondary-color)",
-  size: "var(--small-text)",
+  text: "Large header",
 };
