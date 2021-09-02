@@ -1,10 +1,10 @@
 import React from "react";
 import "./paragraph.styles.scss";
 
-export const Paragraph = (props) => {
+export const Paragraph = ({ columns, text }) => {
   return (
-    <p className="paragraph" style={{ width: `${100 / props.columns}%` }}>
-      {props.text}
+    <p className="paragraph" style={{ width: `${100 / columns}%` }}>
+      {text}
     </p>
   );
 };
