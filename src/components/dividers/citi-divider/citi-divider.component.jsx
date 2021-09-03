@@ -7,6 +7,7 @@ export const CitiDivider = () => {
       width="100%"
       height="100%"
       overflow="visible"
+      className="divider"
       viewBox="0 0 1366 180"
     >
       <path

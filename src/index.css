@@ -6,5 +6,21 @@
 
 body,
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: SF pro;
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.divider {
+  margin: 0px;
+  padding: 0px;
+  line-height: 0px;
+  font-size: 0px;
+  z-index: 999;
 }
