@@ -1,0 +1,22 @@
+.sticky-navigation {
+  width: 100%;
+  height: 4rem;
+  box-shadow: 0 0 10px 0.5 #000;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-top: 1rem;
+  align-items: center;
+  padding: 2rem;
+  position: fixed;
+
+  .search-icon {
+    cursor: pointer;
+    border-bottom: 3px solid #eee;
+    border-radius: 5rem;
+  }
+
+  img {
+    height: 3rem;
+  }
+}

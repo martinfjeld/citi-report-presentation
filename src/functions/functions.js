@@ -10,7 +10,7 @@ export const lineBreak = (words, firstBreak, secondBreak) => {
   let newWords = [];
   words.split(` `).map((word, i) => {
     if (i === firstBreak || i === secondBreak) newWords.push(`\n`);
-    newWords.push(word);
+    return newWords.push(word);
   });
 
   return newWords.join(" ");
