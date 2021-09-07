@@ -17,15 +17,15 @@ export const lineBreak = (words, firstBreak, secondBreak) => {
 };
 
 /**
- * BÆSJEN
- * @param  {words} param1 The text you want to break at some point
- * @param  {firstBreak} param2 The word you want to break at
- * @param  {secondBreak} param3 [OPINIONAL] The second word you want to break at
- * @return {Number}      The new sentence with the line-break
+ * Breaks a massive list of words into different paragraphs to the DOM
+ * @param  {paragraph} param1 The textdump you want to format
+ * @param  {wordLimit} param2 The limit of text for each paragraph (default = 100)
+ * @param  {columns} param3 The number of columns you want on the DOM
+ * @return {Nodes}      The text formatted into nodes
  */
-export const paragraphColumns = (par, wordLimit = 100, width) => {
+export const paragraphColumns = (paragraph, wordLimit = 100, columns) => {
   // Holding current words
-  let wordHolder = [];
+  let sentenceBuilder = [];
 
   // Holding paragraphs
   let paragraphs = [];
@@ -34,28 +34,38 @@ export const paragraphColumns = (par, wordLimit = 100, width) => {
   let counter = 0;
 
   // Making array from paragraph
-  let words = par.split(" ");
+  let words = paragraph.split(" ");
   words.map((word, i) => {
     counter++;
-    wordHolder.push(word);
+    sentenceBuilder.push(word);
+
+    // If the counter has reached the given (or default=100) wordlimit
     if (counter === Number(wordLimit)) {
-      paragraphs.push(`${wordHolder.join(" ")}`);
-      wordHolder.push(word);
+      // Push the new paragraph into the paragraphs array
+      paragraphs.push(`${sentenceBuilder.join(" ")}`);
+
+      // Reset counter and the sentence builder to create new ones
       counter = 0;
-      wordHolder = [];
+      sentenceBuilder = [];
+
+      // If the current iteration has reached it's last word
     } else if (i === words.length - 1) {
-      paragraphs.push(`${wordHolder.join(" ")}`);
-      counter++;
+      // Prevent awkward length on new paragraph
+      if (sentenceBuilder.length < 30) {
+        let newSentence = paragraphs[paragraphs.length - 1];
+        paragraphs.pop();
+        return paragraphs.push(newSentence + " " + sentenceBuilder.join(" "));
+      }
+      paragraphs.push(`${sentenceBuilder.join(" ")}`);
     }
   });
 
-  console.log(paragraphs);
-
+  // Return the new sentences and wrap them into <p> tags
   return paragraphs.map((par) => {
     return (
       <p
         style={{
-          width: `${100 / Number(width)}%`,
+          width: `${100 / Number(columns)}%`,
         }}
       >
         {par}
