@@ -77,3 +77,15 @@ export const paragraphColumns = (
     );
   });
 };
+
+/**
+ * Function to render full page text to the DOM
+ * @param {children}
+ * @return full page image with text (scrollytelling)
+ */
+
+export const childrenRender = (children) => {
+  children.map((child, i) => {
+    return <div className="full-page-paragraph">{child}</div>;
+  });
+};

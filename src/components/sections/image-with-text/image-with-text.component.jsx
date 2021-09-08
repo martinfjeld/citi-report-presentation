@@ -1,4 +1,5 @@
 import React from "react";
+import { childrenRender } from "../../../functions/functions";
 import "./image-with-text.styles.scss";
 
 /**
@@ -8,6 +9,6 @@ import "./image-with-text.styles.scss";
  *
  */
 
-export const ImageWithText = (props) => {
-  return <div className="image-with-text"></div>;
+export const ImageWithText = ({ children }) => {
+  return <div className="image-with-text">{childrenRender(children)}</div>;
 };
