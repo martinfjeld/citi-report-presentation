@@ -1,9 +1,9 @@
 /**
  * Breaks lines to wherever you want it to break
- * @param  {words} param1 The text you want to break at some point
- * @param  {firstBreak} param2 The word you want to break at
- * @param  {secondBreak} param3 [OPINIONAL] The second word you want to break at
- * @return {Number}      The new sentence with the line-break
+ * @param {string} words The text you want to break at some point
+ * @param {number} firstBreak The word you want to break at
+ * @param {number} [secondBreak] [Optional] The second word you want to break at
+ * @return The new sentence with the line-break
  */
 
 export const lineBreak = (words, firstBreak, secondBreak) => {
@@ -18,12 +18,16 @@ export const lineBreak = (words, firstBreak, secondBreak) => {
 
 /**
  * Breaks a massive list of words into different paragraphs to the DOM
- * @param  {paragraph} param1 The textdump you want to format
- * @param  {wordLimit} param2 The limit of text for each paragraph (default = 100)
- * @param  {columns} param3 The number of columns you want on the DOM
- * @return {Nodes}      The text formatted into nodes
+ * @param {string} paragraph The textdump you want to format
+ * @param {number} wordLimit The limit of text for each paragraph (default = 100)
+ * @param {number} columns The number of columns you want on the DOM
+ * @return The text formatted into nodes
  */
-export const paragraphColumns = (paragraph, wordLimit = 100, columns) => {
+export const paragraphColumns = (
+  paragraph = "",
+  wordLimit = 100,
+  columns = 2
+) => {
   // Holding current words
   let sentenceBuilder = [];
 
