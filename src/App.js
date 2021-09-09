@@ -1,6 +1,7 @@
 import "./App.css";
 import { ImageWithText } from "./components/sections/image-with-text/image-with-text.component";
 import { ParagraphSection } from "./components/sections/paragraph-section/paragraph-section.component";
+import { GiantHeader } from "./components/typography/headers/giant-header/giant-header.component";
 import { lineBreak } from "./functions/functions";
 import "./styles/style-variables.scss";
 
@@ -14,7 +15,7 @@ function App() {
 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
       />
       <ImageWithText image="https://cdn-wordpress-info.futurelearn.com/info/wp-content/uploads/FL463_Explore_industries_-_Healthcare_blog_header.jpg">
-        <h1>{lineBreak("Making Healthcare More Accessible", 1, 2)}</h1>
+        <GiantHeader text="Making healthcare more accessible" />
         <p>
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
