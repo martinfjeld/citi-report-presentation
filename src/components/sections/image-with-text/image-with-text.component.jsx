@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./image-with-text.styles.scss";
 import * as Scroll from "./image-with-text.animations";
+import { CitiDivider } from "../../dividers/citi-divider/citi-divider.component";
 
 /**
  * A scrollytelling component that renders a full-page image, with specified text as you scroll
@@ -9,7 +10,7 @@ import * as Scroll from "./image-with-text.animations";
  *
  */
 
-export const ImageWithText = ({ children, image }) => {
+export const ImageWithText = ({ children, image, divider }) => {
   // Add animations
   useEffect(() => {
     Scroll.anim();
@@ -19,7 +20,10 @@ export const ImageWithText = ({ children, image }) => {
   const renderChildren = (children) => {
     return children.map((child, i) => {
       return (
-        <div key={i} className="full-page-paragraph-container">
+        <div
+          key={i}
+          className={child.type === "p" && "full-page-paragraph-container"}
+        >
           {child}
         </div>
       );
@@ -28,6 +32,7 @@ export const ImageWithText = ({ children, image }) => {
 
   return (
     <div className="full-page-scrollytell">
+      {divider && <CitiDivider />}
       {image && (
         <img
           src={image}

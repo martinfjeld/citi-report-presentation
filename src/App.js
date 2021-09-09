@@ -1,8 +1,9 @@
 import "./App.css";
+import { CitiDivider } from "./components/dividers/citi-divider/citi-divider.component";
 import { ImageWithText } from "./components/sections/image-with-text/image-with-text.component";
 import { ParagraphSection } from "./components/sections/paragraph-section/paragraph-section.component";
 import { GiantHeader } from "./components/typography/headers/giant-header/giant-header.component";
-import { lineBreak } from "./functions/functions";
+
 import "./styles/style-variables.scss";
 
 function App() {
@@ -12,46 +13,85 @@ function App() {
         columns="3"
         wordLimit="60"
         paragraph='Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+The standard chunk of LoremContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+The standard chunk of LoremContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
       />
-      <ImageWithText image="https://cdn-wordpress-info.futurelearn.com/info/wp-content/uploads/FL463_Explore_industries_-_Healthcare_blog_header.jpg">
+      <ImageWithText
+        divider
+        image="https://cdn-wordpress-info.futurelearn.com/info/wp-content/uploads/FL463_Explore_industries_-_Healthcare_blog_header.jpg"
+      >
         <GiantHeader text="Making healthcare more accessible" />
+
         <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites
+          There are many other patients, such as those with disabilities, who
+          may have special transportation needs even if they do not have special
+          medical needs. In the U.S., we’re continuing to see delays in
+          diagnoses, medical procedures and treatment, leading to further health
+          risks. On top of that, COVID-19’s disproportionate and severe impact
+          on people of color and lower-income communities only further
+          highlighted the need to address the tremendous gap in access that
+          already existed.
         </p>
         <p>
-          Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-          Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written
-          in 45 BC. This book is a treatise on the theory of ethics, very
-          popular during the Renaissance.{" "}
+          The notion that everyone deserves safe, reliable, and compassionate
+          transportation, regardless of their unique needs, is why I started
+          MedHaul. MedHaul connects healthcare providers with specialized
+          medical transportation providers, providing patients with free, safe,
+          and accountable transportation to and from their medical appointments.
+          Our tech-enabled marketplace replaces outdated, idiosyncratic systems
+          used by hospitals with a standardized platform that pairs patients
+          with a ride that accommodates their specific transportation needs,
+          such as a wheelchair, stretcher, or door-through-door transport. By
+          enabling more people to keep their appointments and wellness visits,
+          MedHaul is improving healthcare outcomes for vulnerable and
+          underserved communities — while also reducing the amount of revenue
+          lost by healthcare providers due to missed appointments. Specialized
+          medical transportation providers also benefit from increased revenue,
+          since we seek out and enlist vetted, high-quality providers to
+          participate in MedHaul who might otherwise have gone overlooked.
         </p>
         <p>
-          The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also reproduced in their
-          exact original form.
+          But launching a successful technology startup takes much more than
+          just a good idea. Bringing MedHaul from a promising concept to an
+          actual business required investment, networks and other resources that
+          are not nearly as available to Black women founders — especially at
+          the seed stage. According to Project Diane, the median seed round
+          funding for a startup is $2.5 million, but that number falls to just
+          $125,000 for Black women founders, who received just .06% of all
+          venture capital investment raised from 2009 to 2018. Black founders
+          don’t have the same kind of access to venture funding sources and
+          networks as other founders, and many cannot rely on family to help
+          raise capital. And then there’s what I call the “quadruple due
+          diligence,” the many additional hoops a Black woman founder needs to
+          jump through in order to meet a much tougher level of funder scrutiny.
+          The obstacles to growth and scale are high, and they are deeply
+          embedded in the structures that fuel the startup ecosystem.
         </p>
         <p>
-          The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also reproduced in their
-          exact original form.
+          Investment through the Citi Impact Fund was a critical step toward
+          shifting that dynamic for founders like me. By dedicating its $200
+          million fund to making equity investments in minority- and women-owned
+          companies like MedHaul, which seek to deliver a positive impact on
+          society in addition to economic success, Citi is working to make the
+          startup world more inclusive and equitable. The early-stage investment
+          MedHaul received from the Impact Fund has been pivotal for our growth
+          — enabling us to build the next version of our online platform for
+          booking and scheduling, develop a marketing campaign to recruit and
+          onboard transportation companies, and scale our operations so we have
+          the capacity to grow smoothly.
         </p>
         <p>
-          The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also reproduced in their
-          exact original form.
+          For MedHaul’s users, this investment will increase access, support the
+          medical transportation providers, and ultimately improve healthcare
+          outcomes. And through efforts like the Citi Impact Fund, more
+          companies like MedHaul can access the vital funding they need at an
+          early stage, enabling them to provide vulnerable communities with the
+          services they deserve.
         </p>
       </ImageWithText>
       <ParagraphSection
         columns="3"
-        wordLimit="60"
         paragraph='Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
       />
