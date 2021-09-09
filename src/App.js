@@ -13,6 +13,7 @@ function App() {
 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
       />
       <ImageWithText image="https://cdn-wordpress-info.futurelearn.com/info/wp-content/uploads/FL463_Explore_industries_-_Healthcare_blog_header.jpg">
+        <h1>Making Healthcare More Accessible</h1>
         <p>
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
@@ -26,24 +27,6 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
           Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written
           in 45 BC. This book is a treatise on the theory of ethics, very
           popular during the Renaissance.{" "}
-        </p>
-        <p>
-          The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also reproduced in their
-          exact original form.
-        </p>
-        <p>
-          The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also reproduced in their
-          exact original form.
-        </p>
-        <p>
-          The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also reproduced in their
-          exact original form.
         </p>
         <p>
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced

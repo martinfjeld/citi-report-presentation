@@ -16,4 +16,15 @@ export const anim = () => {
     ease: "sine",
     scale: 1.1,
   });
+
+  gsap.to(".full-page-paragraph-container", {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".full-page-scrollytell",
+      markers: true,
+      start: "top top",
+      end: "top top",
+      scrub: 1,
+    },
+  });
 };
