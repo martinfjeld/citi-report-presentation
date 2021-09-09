@@ -65,9 +65,10 @@ export const paragraphColumns = (
   });
 
   // Return the new sentences and wrap them into <p> tags
-  return paragraphs.map((par) => {
+  return paragraphs.map((par, i) => {
     return (
       <p
+        key={i}
         style={{
           width: `${100 / Number(columns)}%`,
         }}
@@ -78,14 +79,14 @@ export const paragraphColumns = (
   });
 };
 
-/**
- * Function to render full page text to the DOM
- * @param {children}
- * @return full page image with text (scrollytelling)
- */
+// /**
+//  * Function to render full page text to the DOM
+//  * @param {children}
+//  * @return full page image with text (scrollytelling)
+//  */
 
-export const childrenRender = (children) => {
-  children.map((child, i) => {
-    return <div className="full-page-paragraph">{child}</div>;
-  });
-};
+// export const childrenRender = (children) => {
+//   return children.map((child, i) => {
+//     return <div className="full-page-paragraph">{child}</div>;
+//   });
+// };

@@ -13,10 +13,13 @@
   --large-text: 3.5rem;
 }
 
-@mixin borders($radius) {
+@mixin borders($radius, $shadow) {
   border-radius: $radius;
   border-bottom: 4px solid #eee;
   border-left: 0.5px solid #eee;
   border-right: 0.5px solid #eee;
-  box-shadow: 0 0 5px #eee;
+
+  @if ($shadow) {
+    box-shadow: 0 0 5px #eee;
+  }
 }

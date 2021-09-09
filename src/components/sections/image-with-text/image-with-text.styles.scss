@@ -1,7 +1,48 @@
-.full-page-paragraph {
+@import "../../../styles/style-variables.scss";
+
+.full-page-scrollytell {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+
+  .full-page-paragraph-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    p {
+      background-color: rgba($color: white, $alpha: 0.9);
+      color: #333;
+      font-style: italic;
+      padding: 2rem;
+      border-radius: 2rem;
+      border-bottom-left-radius: 15px;
+      border-left: 10px solid var(--primary-color);
+      width: 50%;
+    }
+  }
+
+  .full-page-image {
+    min-width: 100%;
+    min-height: 100vh;
+
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0.9;
+  }
+
+  .paragraphs-container {
+    width: 100%;
+    height: auto;
+    top: 0px;
+    left: 0px;
+  }
 }
