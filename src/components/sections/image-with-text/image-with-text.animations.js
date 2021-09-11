@@ -39,7 +39,6 @@ export const anim = (id, imgID, headerID) => {
       trigger: `#${id}`,
       start: "top center",
       end: "top center",
-      scrub: 1,
     },
     ease: "sine",
     duration: 1,
@@ -52,7 +51,6 @@ export const anim = (id, imgID, headerID) => {
       trigger: `#${id}`,
       start: "top top",
       end: "top top",
-      scrub: 1,
     },
   });
 };

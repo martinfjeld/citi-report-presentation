@@ -62,6 +62,8 @@ export const paragraphColumns = (
       }
       paragraphs.push(`${sentenceBuilder.join(" ")}`);
     }
+
+    return null;
   });
 
   // Return the new sentences and wrap them into <p> tags

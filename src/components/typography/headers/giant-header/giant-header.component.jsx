@@ -1,7 +1,6 @@
 import React from "react";
 import { lineBreak } from "../../../../functions/functions";
 import "./giant-header.styles.scss";
-import { v4 as uuidv4 } from "uuid";
 
 export const GiantHeader = ({
   text,

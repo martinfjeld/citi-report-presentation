@@ -1,8 +1,7 @@
 import "./App.css";
-
+import { NavigationBar } from "./components/navigation/navigation.component";
 import { ImageWithText } from "./components/sections/image-with-text/image-with-text.component";
 import { ParagraphSection } from "./components/sections/paragraph-section/paragraph-section.component";
-import { GiantHeader } from "./components/typography/headers/giant-header/giant-header.component";
 import { Quote } from "./components/typography/quote/quote.component";
 
 import "./styles/style-variables.scss";
@@ -61,6 +60,15 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
           someone with dementia, even before COVID-19.
         </p>
       </ImageWithText>
+
+      <NavigationBar
+        logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Citi.svg/1024px-Citi.svg.png"
+        links={{
+          home: "https://www.google.com/",
+          about: "https://www.google.com/about",
+          about2: "https://www.google.com/about",
+        }}
+      />
     </div>
   );
 }
