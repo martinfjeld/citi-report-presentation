@@ -25,7 +25,7 @@ export const anim = (id, imgID, headerID) => {
         start: "center 100%",
         end: "center center",
 
-        scrub: true,
+        scrub: 0.8,
       },
     });
 
@@ -49,12 +49,13 @@ export const anim = (id, imgID, headerID) => {
   });
 
   // Fading in the header as the user reaches the section
-  gsap.to(`#${headerID}`, {
-    opacity: 1,
+  let animateHeader = gsap.timeline({
     scrollTrigger: {
       trigger: `#${id}`,
       start: "top top",
       end: "top top",
     },
   });
+
+  animateHeader.fromTo(`#${headerID}`, { opacity: 0 }, { opacity: 1 });
 };

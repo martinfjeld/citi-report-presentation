@@ -1,4 +1,4 @@
-import React, { useEffect, Children } from "react";
+import React, { useEffect } from "react";
 import "./image-with-text.styles.scss";
 import * as Scroll from "./image-with-text.animations";
 import { v4 as uuidv4 } from "uuid";

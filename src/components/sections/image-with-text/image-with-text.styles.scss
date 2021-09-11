@@ -41,7 +41,6 @@
   h1 {
     height: auto;
     width: auto;
-    color: #fff;
     text-transform: uppercase;
     font-size: 5rem;
   }
@@ -96,5 +95,9 @@
     top: 0px;
     left: 0px;
     align-items: flex-start;
+  }
+
+  .giant-header-container {
+    color: #fff;
   }
 }

@@ -2,6 +2,7 @@ import "./App.css";
 import { NavigationBar } from "./components/navigation/navigation.component";
 import { ImageWithText } from "./components/sections/image-with-text/image-with-text.component";
 import { ParagraphSection } from "./components/sections/paragraph-section/paragraph-section.component";
+import { GiantHeader } from "./components/typography/headers/giant-header/giant-header.component";
 import { Quote } from "./components/typography/quote/quote.component";
 
 import "./styles/style-variables.scss";
@@ -9,17 +10,46 @@ import "./styles/style-variables.scss";
 function App() {
   return (
     <div className="App">
+      <GiantHeader text="ESG at Citi" color="red" />
+      <NavigationBar
+        logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Citi.svg/1024px-Citi.svg.png"
+        links={{
+          home: "https://www.google.com/",
+          about: "https://www.google.com/about",
+          about2: "https://www.google.com/about",
+        }}
+      />
       <ParagraphSection
-        columns="2"
-        wordLimit="100"
+        columns="1"
         paragraph='Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 The standard chunk of LoremContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 The standard chunk of LoremContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
       />
       <ImageWithText
+        image="https://static01.nyt.com/images/2020/09/11/business/10CITI-print/10CITI-main-mediumSquareAt3X.jpg"
+        header="Letter from Our CEO, Jane Frauser"
+        headerBreak={4}
+        author="Sarah Plybeah"
         divider
-        image="https://media.bizj.us/view/img/11831651/tnsu-starboardport-portrait-006*1200xx1710-964-0-176.jpg"
+      >
+        <Quote
+          text="One year into the pandemic, the impacts of this global crisis are a reminder that Citi’s mission of
+enabling growth and economic progress isn’t just a bunch of words on our website. It’s something
+we take very seriously and bring to life through our day-to-day work in all parts of our business.
+I joined Citi more than 16 years ago, and my proudest moments at the firm have been when we
+have used our talent, experience and capabilities as a global bank to help solve some of society’s
+toughest problems."
+        />
+      </ImageWithText>
+
+      <ParagraphSection
+        columns="2"
+        wordLimit="100"
+        paragraph="While I was the CEO of Citi’s Latin America region, for example, we worked with Mexico’s central bank to develop a new platform that allows anyone to make and receive cashless payments for free. In a country where a little more than a third of adults have a bank account but many more have a mobile phone, Cobro Digital has since paved the way for millions of Mexicans to access affordable financial services. It has also reinforced our belief that by living our core values we generate business value. This is the kind of solution that banks like ours can forge to build a better world — and there is an increasing expectation from all our stakeholders that we do so. Our environmental, social and governance (ESG) agenda cannot just be a separate layer that sits above what we do day to day. It is embedded in what we do and creates concrete examples of the empathy I see in our firm every day as we work to serve our clients, customers and communities. With trust in public institutions at record lows, there is greater opportunity for those of us in the private sector to step up and lead. One of the most urgent issues we can help to address Letter from Our CEO, Jane Fraser is confronting climate change. We are pleased to see the U.S. rejoin the Paris Agreement, and we are committed to doing our part. In 2020, in the midst of the pandemic, we announced our 2025 Sustainable Progress Strategy. At its heart is a five-year commitment to finance and facilitate $250 billion in environmental activities. In conjunction with this ambitious climate finance goal, we’re working with our clients to evaluate their climate risks and vulnerabilities while continuing to minimize our own company’s direct impacts on the planet. Earlier this year, on my first day as CEO, we committed Citi to net zero emissions by 2050. For us, the transition to more sustainable business practices mitigates risk and can be another competitive advantage. Building on these goals, we recently took another step and committed $1 trillion to sustainable finance by 2030, aligning with the agenda of the United Nations’ Sustainable Development Goals. This "
+      />
+      <ImageWithText
+        image="https://bettertennessee.com/wp-content/uploads/2018/09/BCBST-Erica-2-1.jpg"
         header="Making Healthcare More accessible"
         headerBreak={2}
         author="Sarah Plybeah"
@@ -45,7 +75,6 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
       />
       <ImageWithText
         header="Sustainability Issues to Watch in 2021 and Beyond"
-        divider
         headerBreak={2}
         secHeaderBreak={6}
         author="Val Smith"
@@ -53,14 +82,10 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
       >
         <Quote text="2021 will be a pivotal and consequential year for sustainability initiatives and climate change. Around the world, a broad set of stakeholders are focusing their attention on the breadth of climate-related risks and opportunities." />
       </ImageWithText>
-
-      <NavigationBar
-        logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Citi.svg/1024px-Citi.svg.png"
-        links={{
-          home: "https://www.google.com/",
-          about: "https://www.google.com/about",
-          about2: "https://www.google.com/about",
-        }}
+      <ParagraphSection
+        columns="3"
+        wordLimit="80"
+        paragraph="In the U.S., following the release of the Biden Administration’s longterm plan for greenhouse gas (GHG) reductions on Earth Day, we expect to see changes through executive and congressional action, a welcome contribution as we seek to re-join governments around the world in driving climate leadership in support of the Paris Agreement. Industries across every sector of the global economy — including banking and financial services — are working to meet their own GHG commitments and those that policy makers are setting out. This effort will require no small amount of collaboration, innovation, big thinking, and largescale partnerships between the public and private sector. In the past, I have used this space to highlight efforts that Citi has undertaken on our path to incorporate sustainability into how we do business. We are proud of the work we have done; from 2014 to 2019, we financed and facilitated $164 billion in low-carbon solutions, and last year we committed to an additional $250 billion in environmental finance by 2025. We also reached our goal of purchasing 100% renewable electricity for our facilities around the world. Earlier this year, we took another important step in our journey and committed to net zero GHG emissions by 2050. With so much focus on the broader trends and innovative approaches to sustainability, I’d like to highlight the related issues we are tracking externally. These range from specific to broad, from short term to long, but within each, there is a pivotal role that Citi can and will play in building a more sustainable future."
       />
     </div>
   );

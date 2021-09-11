@@ -31,7 +31,11 @@ export const NavigationBar = ({ logo, links }) => {
       </div>
       {links && (
         <div className="navigation-bar__links" onClick={handleClick}>
-          hehe
+          <div className="burger">
+            <div className={`menu-btn ${toggle ? "open" : undefined}`}>
+              <div className="menu-btn__burger"></div>
+            </div>
+          </div>
           {toggle && <ul>{generateLinks(links)}</ul>}
         </div>
       )}
