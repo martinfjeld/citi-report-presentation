@@ -14,7 +14,7 @@ export const GiantHeader = ({
       <h1 className="giant-header">
         {lineBreak(text, firstBreak, secondBreak)}
       </h1>
-      <h3 className="undertext">{undertext}</h3>
+      <h3 className="undertext">by {undertext}</h3>
     </div>
   );
 };

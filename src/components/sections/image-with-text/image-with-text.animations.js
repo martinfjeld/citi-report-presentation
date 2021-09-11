@@ -3,6 +3,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const anim = (id, imgID, headerID) => {
+  // Making image zoom slowly as the user scrolls
   gsap.to(`#${imgID}`, {
     scrollTrigger: {
       trigger: `#${id}`,
@@ -10,12 +11,13 @@ export const anim = (id, imgID, headerID) => {
       end: "bottom bottom",
       pin: `#${imgID}`,
       pinSpacing: false,
-      scrub: 5,
+      scrub: 1,
     },
     ease: "sine",
     scale: 1.15,
   });
 
+  // Fading in the paragraphs from the bottom (100% when top hits the center of the viewport)
   gsap.utils.toArray(".full-page-paragraph-container").forEach((el, index) => {
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -34,6 +36,7 @@ export const anim = (id, imgID, headerID) => {
     );
   });
 
+  // Fading in the image as the user reaches the section
   gsap.to(`#${imgID}`, {
     scrollTrigger: {
       trigger: `#${id}`,
@@ -45,6 +48,7 @@ export const anim = (id, imgID, headerID) => {
     opacity: 0.9,
   });
 
+  // Fading in the header as the user reaches the section
   gsap.to(`#${headerID}`, {
     opacity: 1,
     scrollTrigger: {

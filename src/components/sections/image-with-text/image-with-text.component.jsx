@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Children } from "react";
 import "./image-with-text.styles.scss";
 import * as Scroll from "./image-with-text.animations";
 import { v4 as uuidv4 } from "uuid";
@@ -12,7 +12,15 @@ import { GiantHeader } from "../../typography/headers/giant-header/giant-header.
  *
  */
 
-export const ImageWithText = ({ children, image, divider, header, author }) => {
+export const ImageWithText = ({
+  children,
+  image,
+  divider,
+  header,
+  author,
+  headerBreak,
+  secHeaderBreak,
+}) => {
   // Add animations
 
   const imgID = `b${uuidv4()}`;
@@ -21,7 +29,7 @@ export const ImageWithText = ({ children, image, divider, header, author }) => {
 
   // Wrap children in one full page container
   const renderChildren = (children) => {
-    return children.map((child, i) => {
+    return React.Children.map(children, (child, i) => {
       return (
         <div
           key={i}
@@ -52,7 +60,8 @@ export const ImageWithText = ({ children, image, divider, header, author }) => {
 
       <GiantHeader
         text={header}
-        firstBreak={2}
+        firstBreak={headerBreak}
+        secondBreak={secHeaderBreak}
         undertext={author}
         id={headerID}
       />

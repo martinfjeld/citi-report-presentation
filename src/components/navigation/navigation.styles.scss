@@ -12,11 +12,21 @@
   &__logo {
     position: relative;
     height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem);
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 2px solid #eee;
     img {
       height: inherit;
       width: auto;
-      padding-left: 1rem;
     }
   }
 
