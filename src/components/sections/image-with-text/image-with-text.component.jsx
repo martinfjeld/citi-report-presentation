@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import "./image-with-text.styles.scss";
 import * as Scroll from "./image-with-text.animations";
+import { v4 as uuidv4 } from "uuid";
 import { CitiDivider } from "../../dividers/citi-divider/citi-divider.component";
+import { GiantHeader } from "../../typography/headers/giant-header/giant-header.component";
 
 /**
  * A scrollytelling component that renders a full-page image, with specified text as you scroll
@@ -10,11 +12,12 @@ import { CitiDivider } from "../../dividers/citi-divider/citi-divider.component"
  *
  */
 
-export const ImageWithText = ({ children, image, divider }) => {
+export const ImageWithText = ({ children, image, divider, header, author }) => {
   // Add animations
-  useEffect(() => {
-    Scroll.anim();
-  }, []);
+
+  const imgID = `b${uuidv4()}`;
+  const id = `b${uuidv4()}`;
+  const headerID = `b${uuidv4()}`;
 
   // Wrap children in one full page container
   const renderChildren = (children) => {
@@ -22,7 +25,9 @@ export const ImageWithText = ({ children, image, divider }) => {
       return (
         <div
           key={i}
-          className={child.type === "p" && "full-page-paragraph-container"}
+          className={
+            child.type === "p" ? "full-page-paragraph-container" : undefined
+          }
         >
           {child}
         </div>
@@ -30,17 +35,27 @@ export const ImageWithText = ({ children, image, divider }) => {
     });
   };
 
+  useEffect(() => {
+    Scroll.anim(id, imgID, headerID);
+  });
   return (
-    <div className="full-page-scrollytell">
+    <div className="full-page-scrollytell" id={id}>
       {divider && <CitiDivider />}
       {image && (
         <img
           src={image}
           className="full-page-image"
           alt="Full page background"
+          id={imgID}
         />
       )}
 
+      <GiantHeader
+        text={header}
+        firstBreak={2}
+        undertext={author}
+        id={headerID}
+      />
       <div className="paragraphs-container">{renderChildren(children)}</div>
     </div>
   );

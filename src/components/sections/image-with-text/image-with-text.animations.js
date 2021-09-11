@@ -2,13 +2,13 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export const anim = () => {
-  gsap.to(".full-page-image", {
+export const anim = (id, imgID, headerID) => {
+  gsap.to(`#${imgID}`, {
     scrollTrigger: {
-      trigger: ".full-page-scrollytell",
+      trigger: `#${id}`,
       start: "top top",
       end: "bottom bottom",
-      pin: ".full-page-image",
+      pin: `#${imgID}`,
       pinSpacing: false,
       scrub: 5,
     },
@@ -34,21 +34,22 @@ export const anim = () => {
     );
   });
 
-  gsap.to(".full-page-image", {
+  gsap.to(`#${imgID}`, {
     scrollTrigger: {
-      trigger: ".full-page-scrollytell",
+      trigger: `#${id}`,
       start: "top center",
       end: "top center",
+      scrub: 1,
     },
     ease: "sine",
     duration: 1,
     opacity: 0.9,
   });
 
-  gsap.to("h1", {
+  gsap.to(`#${headerID}`, {
     opacity: 1,
     scrollTrigger: {
-      trigger: ".full-page-scrollytell",
+      trigger: `#${id}`,
       start: "top top",
       end: "top top",
       scrub: 1,
