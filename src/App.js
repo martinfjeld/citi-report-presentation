@@ -1,14 +1,43 @@
 import "./App.css";
 import { Card } from "./components/elements/card/card.component";
 import { NavigationBar } from "./components/navigation/navigation.component";
+import { ImageStrip } from "./components/sections/image-strip/image-strip.component";
 import { ImageWithText } from "./components/sections/image-with-text/image-with-text.component";
 import { Overview } from "./components/sections/overview/overview.component";
 import { ParagraphSection } from "./components/sections/paragraph-section/paragraph-section.component";
+import { StorySlide } from "./components/sections/story/story-slide.component";
+import { Story } from "./components/sections/story/story.component";
 import { GiantHeader } from "./components/typography/headers/giant-header/giant-header.component";
 import { Header } from "./components/typography/headers/header/header.component";
 import { Quote } from "./components/typography/quote/quote.component";
 
 import "./styles/style-variables.scss";
+
+// Lag en funksjon som tar inn et object med følgende struktur:
+// const obj = {
+//   first: {
+//     image: "https://www.image.com/thisphoto1.png",
+//     paragraph: "This is the paragrah for photo 1",
+//   },
+//   second: {
+//     image: "https://www.image.com/thisphoto2.png",
+//     paragraph: "This is the paragrah for photo 2",
+//   },
+//   third: {
+//     image: "https://www.image.com/thisphoto3.png",
+//     paragraph: "This is the paragrah for photo 3",
+//   },
+//   fourth: {
+//     image: "https://www.image.com/thisphoto4.png",
+//     paragraph: "This is the paragrah for photo 4",
+//   },
+//   fifth: {
+//     image: "https://www.image.com/thisphoto5.png",
+//     paragraph: "This is the paragrah for photo 5",
+//   },
+// };
+
+// Funksjonen skal deretter loope gjennom objektet og gi en unik id til hvert element.
 
 function App() {
   return (
@@ -34,7 +63,7 @@ function App() {
         columns="1"
         paragraph="This is an Executive Summary of our 2020 Environmental, Social and Governance Report, which covers our ESG activities and performance for the calendar year 2020. This summary and the full report highlight how we bring our mission and value proposition to life through our business. All reporting and performance data are limited to information for the owned and operated facilities of Citigroup Inc. and its subsidiaries unless stated otherwise. Additional information about Citi can be found on our website at citigroup.com."
       />
-
+      <ImageStrip />
       <Overview>
         <Card
           toptext="Citi Impact Fund"
@@ -57,11 +86,18 @@ function App() {
           bottomtext="by Erica Plybeah"
         />
       </Overview>
+
+      <Story>
+        <StorySlide image="https://static01.nyt.com/images/2020/09/11/business/10CITI-print/10CITI-main-mediumSquareAt3X.jpg" />
+        <StorySlide image="https://static01.nyt.com/images/2020/09/11/business/10CITI-print/10CITI-main-mediumSquareAt3X.jpg">
+          <p>Hello!</p>
+        </StorySlide>
+      </Story>
+
       <ImageWithText
         image="https://static01.nyt.com/images/2020/09/11/business/10CITI-print/10CITI-main-mediumSquareAt3X.jpg"
         header="Letter from Our CEO, Jane Frauser"
         headerBreak={4}
-        divider
       >
         <Quote
           text="One year into the pandemic, the impacts of this global crisis are a reminder that Citi’s mission of
@@ -71,6 +107,84 @@ I joined Citi more than 16 years ago, and my proudest moments at the firm have b
 have used our talent, experience and capabilities as a global bank to help solve some of society’s
 toughest problems."
         />
+
+        <p>
+          Nowadays, most hospitals and healthcare providers do offer free or
+          reduced-cost rides home, but those trips are often via taxis,
+          rideshare services or public transportation — not really viable
+          choices for new mothers, people undergoing cancer treatments or
+          someone with dementia, even before COVID-19.
+        </p>
+        <p>
+          Nowadays, most hospitals and healthcare providers do offer free or
+          reduced-cost rides home, but those trips are often via taxis,
+          rideshare services or public transportation — not really viable
+          choices for new mothers, people undergoing cancer treatments or
+          someone with dementia, even before COVID-19.
+        </p>
+        <p>
+          Nowadays, most hospitals and healthcare providers do offer free or
+          reduced-cost rides home, but those trips are often via taxis,
+          rideshare services or public transportation — not really viable
+          choices for new mothers, people undergoing cancer treatments or
+          someone with dementia, even before COVID-19.
+        </p>
+        <p>
+          Nowadays, most hospitals and healthcare providers do offer free or
+          reduced-cost rides home, but those trips are often via taxis,
+          rideshare services or public transportation — not really viable
+          choices for new mothers, people undergoing cancer treatments or
+          someone with dementia, even before COVID-19.
+        </p>
+        <p>
+          Nowadays, most hospitals and healthcare providers do offer free or
+          reduced-cost rides home, but those trips are often via taxis,
+          rideshare services or public transportation — not really viable
+          choices for new mothers, people undergoing cancer treatments or
+          someone with dementia, even before COVID-19.
+        </p>
+        <p>
+          Nowadays, most hospitals and healthcare providers do offer free or
+          reduced-cost rides home, but those trips are often via taxis,
+          rideshare services or public transportation — not really viable
+          choices for new mothers, people undergoing cancer treatments or
+          someone with dementia, even before COVID-19.
+        </p>
+        <p>
+          Nowadays, most hospitals and healthcare providers do offer free or
+          reduced-cost rides home, but those trips are often via taxis,
+          rideshare services or public transportation — not really viable
+          choices for new mothers, people undergoing cancer treatments or
+          someone with dementia, even before COVID-19.
+        </p>
+        <p>
+          Nowadays, most hospitals and healthcare providers do offer free or
+          reduced-cost rides home, but those trips are often via taxis,
+          rideshare services or public transportation — not really viable
+          choices for new mothers, people undergoing cancer treatments or
+          someone with dementia, even before COVID-19.
+        </p>
+        <p>
+          Nowadays, most hospitals and healthcare providers do offer free or
+          reduced-cost rides home, but those trips are often via taxis,
+          rideshare services or public transportation — not really viable
+          choices for new mothers, people undergoing cancer treatments or
+          someone with dementia, even before COVID-19.
+        </p>
+        <p>
+          Nowadays, most hospitals and healthcare providers do offer free or
+          reduced-cost rides home, but those trips are often via taxis,
+          rideshare services or public transportation — not really viable
+          choices for new mothers, people undergoing cancer treatments or
+          someone with dementia, even before COVID-19.
+        </p>
+        <p>
+          Nowadays, most hospitals and healthcare providers do offer free or
+          reduced-cost rides home, but those trips are often via taxis,
+          rideshare services or public transportation — not really viable
+          choices for new mothers, people undergoing cancer treatments or
+          someone with dementia, even before COVID-19.
+        </p>
       </ImageWithText>
 
       <ParagraphSection

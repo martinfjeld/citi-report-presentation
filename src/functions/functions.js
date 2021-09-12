@@ -72,7 +72,11 @@ export const paragraphColumns = (
       <p
         key={i}
         style={{
-          width: `${100 / Number(columns)}%`,
+          textAlign: `${paragraphs.length === 1 && "center"}`,
+          margin: `${paragraphs.length === 1 && "auto"}`,
+          width: `${
+            (paragraphs.length === 1 && "70") || 100 / Number(columns)
+          }%`,
         }}
       >
         {par}
@@ -81,14 +85,17 @@ export const paragraphColumns = (
   });
 };
 
-// /**
-//  * Function to render full page text to the DOM
-//  * @param {children}
-//  * @return full page image with text (scrollytelling)
-//  */
+/**
+ * Function to render full page text to the DOM
+ * @param {obj}
+ * @return full page image with text (scrollytelling)
+ */
+export const makeArrayOfImgAndParagraph = (obj) => {
+  let images = [];
+  let paragraphs = [];
 
-// export const childrenRender = (children) => {
-//   return children.map((child, i) => {
-//     return <div className="full-page-paragraph">{child}</div>;
-//   });
-// };
+  for (let key in obj) {
+    images.push(obj[key].image);
+    paragraphs.push(obj[key].paragraph);
+  }
+};

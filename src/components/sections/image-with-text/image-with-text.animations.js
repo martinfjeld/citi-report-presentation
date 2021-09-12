@@ -2,7 +2,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export const anim = (id, imgID, headerID) => {
+export const anim = (id, imgID, headerID, object) => {
   // Making image zoom slowly as the user scrolls
   gsap.to(`#${imgID}`, {
     scrollTrigger: {
