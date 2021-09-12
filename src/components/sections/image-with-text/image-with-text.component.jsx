@@ -17,7 +17,7 @@ export const ImageWithText = ({
   image,
   divider,
   header,
-  author,
+  undertext,
   headerBreak,
   secHeaderBreak,
 }) => {
@@ -62,8 +62,9 @@ export const ImageWithText = ({
         text={header}
         firstBreak={headerBreak}
         secondBreak={secHeaderBreak}
-        undertext={author}
+        undertext={undertext}
         id={headerID}
+        color="#fff"
       />
       <div className="paragraphs-container">{renderChildren(children)}</div>
     </div>

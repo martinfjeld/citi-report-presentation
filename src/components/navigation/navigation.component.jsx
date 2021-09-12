@@ -36,7 +36,11 @@ export const NavigationBar = ({ logo, links }) => {
               <div className="menu-btn__burger"></div>
             </div>
           </div>
-          {toggle && <ul>{generateLinks(links)}</ul>}
+          {toggle && (
+            <ul style={{ opacity: toggle ? 1 : undefined }}>
+              {generateLinks(links)}
+            </ul>
+          )}
         </div>
       )}
     </div>

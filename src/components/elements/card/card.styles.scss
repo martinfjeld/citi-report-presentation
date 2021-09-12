@@ -1,0 +1,46 @@
+.card {
+  transition: all 0.2s cubic-bezier(0.34, 1.96, 0.64, 1);
+  border-bottom: 3px solid #eee;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+  box-shadow: 0px 0px 3px #eee;
+  border-radius: 4rem;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--primary-color);
+  align-self: center;
+  background-color: #fff;
+  z-index: 9;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 2px 4px #eee;
+    transform: scale(1.05) translateY(-5px);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    & > *:not(:last-child) {
+      margin-top: 0.5rem;
+    }
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    color: #777;
+    font-weight: 500;
+  }
+
+  p {
+    color: #aaa;
+  }
+}

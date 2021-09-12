@@ -87,6 +87,8 @@
       justify-content: space-around;
       align-items: center;
       position: fixed;
+      opacity: 0;
+      transition: all 0.9s;
 
       li {
         a {
