@@ -5,8 +5,7 @@ import { ImageStrip } from "./components/sections/image-strip/image-strip.compon
 import { ImageWithText } from "./components/sections/image-with-text/image-with-text.component";
 import { Overview } from "./components/sections/overview/overview.component";
 import { ParagraphSection } from "./components/sections/paragraph-section/paragraph-section.component";
-import { StorySlide } from "./components/sections/story/story-slide.component";
-import { Story } from "./components/sections/story/story.component";
+
 import { GiantHeader } from "./components/typography/headers/giant-header/giant-header.component";
 import { Header } from "./components/typography/headers/header/header.component";
 import { Quote } from "./components/typography/quote/quote.component";
@@ -86,13 +85,6 @@ function App() {
           bottomtext="by Erica Plybeah"
         />
       </Overview>
-
-      <Story>
-        <StorySlide image="https://static01.nyt.com/images/2020/09/11/business/10CITI-print/10CITI-main-mediumSquareAt3X.jpg" />
-        <StorySlide image="https://static01.nyt.com/images/2020/09/11/business/10CITI-print/10CITI-main-mediumSquareAt3X.jpg">
-          <p>Hello!</p>
-        </StorySlide>
-      </Story>
 
       <ImageWithText
         image="https://static01.nyt.com/images/2020/09/11/business/10CITI-print/10CITI-main-mediumSquareAt3X.jpg"
