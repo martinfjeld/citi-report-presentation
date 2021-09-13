@@ -1,5 +1,6 @@
 .header {
   color: var(--primary-color);
+  padding: 0rem 0rem 2rem 0;
 }
 
 .small {
@@ -11,4 +12,15 @@
 }
 
 .large {
+  font-size: 2.5rem;
+}
+
+.header.border {
+  border-radius: 4rem;
+  padding: 3rem;
+  font-style: italic;
+  border-bottom: 3px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  box-shadow: 0px 0px 3px #eee;
 }

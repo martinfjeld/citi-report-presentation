@@ -1,6 +1,7 @@
 import React from "react";
 import "./paragraph-section.styles.scss";
 import { paragraphColumns } from "../../../functions/functions";
+import { CitiDivider } from "../../dividers/citi-divider/citi-divider.component";
 
 /**
  * A simple text-component that formats a bunch of text into specified measures.
@@ -8,10 +9,13 @@ import { paragraphColumns } from "../../../functions/functions";
  * @param {number} columns Amount of horizontal columns you want to format to the DOM
  * @param {number} wordLimit The text you want to display
  */
-export const ParagraphSection = ({ paragraph, columns, wordLimit }) => {
+export const ParagraphSection = ({ paragraph, columns, wordLimit, width }) => {
   return (
-    <div className="paragraph-section">
-      {paragraphColumns(paragraph, wordLimit, columns)}
+    <div style={{ backgroundColor: "var(--primary-color)" }}>
+      <CitiDivider />
+      <div className="paragraph-section" style={{ width: width }}>
+        {paragraphColumns(paragraph, wordLimit, columns)}
+      </div>
     </div>
   );
 };

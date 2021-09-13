@@ -1,0 +1,12 @@
+.arena {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 5rem auto;
+}
+
+.inverted {
+  background-color: var(--primary-color);
+  color: #fff;
+}

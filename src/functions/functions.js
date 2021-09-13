@@ -72,11 +72,7 @@ export const paragraphColumns = (
       <p
         key={i}
         style={{
-          textAlign: `${paragraphs.length === 1 && "center"}`,
-          margin: `${paragraphs.length === 1 && "auto"}`,
-          width: `${
-            (paragraphs.length === 1 && "70") || 100 / Number(columns)
-          }%`,
+          width: `${100 / Number(columns)}%`,
         }}
       >
         {par}

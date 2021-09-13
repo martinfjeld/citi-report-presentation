@@ -10,9 +10,18 @@ export const GiantHeader = ({
   id,
   color,
   specialDot,
+  background,
 }) => {
   return (
-    <div className="giant-header-container" id={id} style={{ color: color }}>
+    <div
+      className="giant-header-container"
+      id={id}
+      style={{
+        color: color === "primary" ? "var(--primary-color)" : color,
+        backgroundColor:
+          background === "primary" ? "var(--primary-color)" : background,
+      }}
+    >
       <h1 className="giant-header">
         {lineBreak(text, firstBreak, secondBreak)}
         {specialDot && <span style={{ color: "red " }}>.</span>}
