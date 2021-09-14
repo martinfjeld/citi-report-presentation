@@ -4,6 +4,7 @@ import "./story.styles.scss";
 import { v4 as uuidv4 } from "uuid";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { CitiDivider } from "../../dividers/citi-divider/citi-divider.component";
 gsap.registerPlugin(ScrollTrigger);
 
 /**
@@ -13,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
  * @returns full-page image with text as you scoll to the DOM
  *
  */
-export const Story = ({ children }) => {
+export const Story = ({ children, divider, background }) => {
   const images = children.filter((child) => child.type === "img");
   const childrens = children.filter((child) => child.type !== "img");
   let uqID = `img${uuidv4()}`;
@@ -60,16 +61,17 @@ export const Story = ({ children }) => {
 
     gsap.to(`#c${uqContainerID}`, {
       scrollTrigger: {
-        trigger: `.story`,
+        trigger: `div#s${uqContainerID}.story`,
         start: "top top",
         end: "bottom bottom",
         pin: `#c${uqContainerID}`,
       },
     });
-  }, []);
+  });
 
   return (
-    <div className="story" id={uqContainerID}>
+    <div className={`story`} id={`s${uqContainerID}`}>
+      {divider && <CitiDivider dark />}
       {
         <div className="images" id={`c${uqContainerID}`}>
           {
@@ -80,7 +82,7 @@ export const Story = ({ children }) => {
                   className="image-element"
                   id={`img${i}${uqID}`}
                   key={i}
-                  style={{ zIndex: -i }}
+                  style={{ zIndex: -i, backgroundColor: background }}
                 >
                   {img}
                 </div>

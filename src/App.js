@@ -12,6 +12,7 @@ import { Arena } from "./components/sections/arena/arena.component";
 import { FiftyFifty } from "./components/sections/fifty-fifty/fifty-fifty.component";
 import { Achivement } from "./components/elements/achivement/achivement.component";
 import { CitiDivider } from "./components/dividers/citi-divider/citi-divider.component";
+import { ChatBubble } from "./components/elements/chatbubble/chatbubble.component";
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
         />
       </FiftyFifty>
       <ImageWithText
+        divider
         header="Letter from our CEO"
         undertext="written by Jane Fraser"
         image="https://static01.nyt.com/images/2020/09/11/business/10CITI-print/10CITI-main-mediumSquareAt3X.jpg"
@@ -383,6 +385,7 @@ answering the call."
         </Achivement>
       </Story>
       <ImageWithText
+        divider
         header="Making Healthcare More Accessible"
         headerBreak={2}
         undertext="by Erica Plybeah"
@@ -483,6 +486,7 @@ the capacity to grow smoothly."
         </Arena>
       </FiftyFifty>
       <ImageWithText
+        divider
         header="Sustainability Issues to Watch in 2021 and Beyond"
         headerBreak={3}
         undertext="by Val Smith "
@@ -495,6 +499,455 @@ climate change. Around the world, a
 broad set of stakeholders are focusing
 their attention on the breadth of
 climate-related risks and opportunities."
+        />
+      </ImageWithText>
+
+      <FiftyFifty>
+        <Arena width="70" align="">
+          <p>
+            In the U.S., following the release of the Biden Administration’s
+            longterm plan for greenhouse gas (GHG) reductions on Earth Day, we
+            expect to see changes through executive and congressional action, a
+            welcome contribution as we seek to re-join governments around the
+            world in driving climate leadership in support of the Paris
+            Agreement. Industries across every sector of the global economy —
+            including banking and financial services — are working to meet their
+            own GHG commitments and those that policy makers are setting out.
+            This effort will require no small amount of collaboration,
+            innovation, big thinking, and largescale partnerships between the
+            public and private sector. In the past, I have used this space to
+            highlight efforts that Citi has undertaken on our path to
+            incorporate sustainability into how we do business.
+          </p>
+        </Arena>
+        <img
+          src="https://image.flaticon.com/icons/png/512/3176/3176369.png"
+          className="icon"
+          alt=""
+        />
+      </FiftyFifty>
+      <ParagraphSection
+        columns={2}
+        wordLimit={70}
+        paragraph="We are proud of the work we have done; from 2014 to 2019, we financed
+          and facilitated $164 billion in low-carbon solutions, and last year we
+          committed to an additional $250 billion in environmental finance by
+          2025. We also reached our goal of purchasing 100% renewable
+          electricity for our facilities around the world. Earlier this year, we
+          took another important step in our journey and committed to net zero
+          GHG emissions by 2050. With so much focus on the broader trends and
+          innovative approaches to sustainability, I’d like to highlight the
+          related issues we are tracking externally. These range from specific
+          to broad, from short term to long, but within each, there is a pivotal
+          role that Citi can and will play in building a more sustainable
+          future."
+      />
+      <Story>
+        <img
+          src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F200910084940-jane-fraser-2019-file-restricted-01.jpg"
+          alt=""
+        />
+
+        <ChatBubble>
+          On Jane Fraser’s first day as CEO, she committed Citi to a goal of net
+          zero emissions by 2050, an ambitious goal that we are mapping out over
+          the next year. Other companies in financial services, as well as the
+          tech, power and energy sectors, have made similar commitments in
+          recent months. So what does it all mean? To state it simply, net zero
+          means reducing emissions associated with business and operations
+          activities to as close to zero as possible, and neutralizing any
+          remaining emissions through removal from the atmosphere. How companies
+          actually get there and deal with that remainder is a challenge I am
+          keenly interested in. There are a growing number of approaches —
+          things like regenerative agriculture and hydrogen fuel are gaining
+          steam, and the Biden administration is considering establishing a
+          Carbon Bank to further legitimize those efforts. Other areas under
+          exploration include afforestation and finding ways to deal with
+          fugitive methane emissions. There has also been significant investment
+          in private-sector companies developing innovative sequestration
+          technologies. As always, we’ll share our learnings and disclose our
+          progress along the way.
+        </ChatBubble>
+        <img
+          src="https://cdn.corporatefinanceinstitute.com/assets/Industry.jpeg"
+          alt=""
+        />
+
+        <ChatBubble>
+          Citi isn’t the only company where ESG has become more and more
+          integrated into the business. Companies across every industry are
+          shifting their focus from short term gains (i.e. stock prices) to a
+          longer term approach focused on sustainable growth. We are also seeing
+          more deliberate board oversight of ESG, and executive compensation is
+          being linked to ESG metrics and performance. As the ESG reporting
+          landscape continues to evolve, with the potential consolidation of
+          different frameworks and new global bodies to oversee reporting
+          practices, the key and consistent through-line for us is
+          accountability. At Citi, we publicly report on our progress for all
+          ESG initiatives, including our efforts to advance pay equity, racial
+          equity, and our previously announced sustainability goals. That
+          transparency goes hand-in-hand with the stakeholders and communities
+          to which we hold ourselves accountable. It is our hope that other
+          companies launching efforts like this for the first time will do the
+          same.
+        </ChatBubble>
+        <img
+          src="https://www.parisschoolofeconomics.eu/IMG/arton5587.png"
+          alt=""
+        />
+
+        <ChatBubble>
+          When we look at the potential impacts of climate change, both
+          domestically and globally, an important area of focus is the
+          communities where those effects will be felt most acutely. Current
+          analysis tells us that low income communities around the world are
+          much more susceptible to the negative impacts from climate change than
+          higher income areas. In the US, communities of color have long
+          suffered disparate health outcomes due to significantly higher levels
+          of exposure to air pollution based on the location of industrial
+          development. More recently, terms like “climate gentrification” —
+          meaning the movement of whiter, more affluent populations to areas
+          less at-risk, while pushing poorer communities to higher risk areas —
+          have gained significant traction. Citi has been working with local
+          governments to address issues like this for years, but as the problem
+          accelerates — both in terms of timing and severity — so too will the
+          impacts. The issue is front and center in the Biden Administration’s
+          whole of government approach to climate change and will loom large in
+          Congressional legislation as well. How the private sector works to
+          address these disproportionate effects in the U.S. and around the
+          world will be important. And since the most severe impacts will likely
+          play out in countries more susceptible to flooding and drought, a
+          global focus — and global collaboration — will be a central part of
+          any mitigation efforts.
+        </ChatBubble>
+        <img
+          src="https://api.timeforkids.com/wp-content/uploads/2020/08/animalVoting.jpg?w=1024"
+          alt=""
+        />
+
+        <ChatBubble>
+          It is hard to ignore the ripple effect that climate change will have
+          not only on the people in our communities, but also on the
+          environments those communities are in. Specifically, plant and animal
+          life are greatly impacted by climate change, with some studies
+          projecting that up to one third of all species could be extinct by
+          2070 if our behavior does not change. If even a small percentage of
+          that destruction is realized, it will reshape the way millions of
+          people live, alter the livelihoods of entire countries, and ravage
+          local economic and food systems, to name just a few potential
+          outcomes. This is an emerging issue not just for Citi, but across
+          private industry and for governments around the world, and we still
+          lack many of the tools and data needed to make a direct impact. In
+          some ways, it reminds me of where we started with assessing climate
+          risk over a decade ago. When I look at how far we have come on that
+          front, I am encouraged that we will have more actionable information
+          in short order, and that Citi can play a major role in ensuring the
+          safety and growth of our natural environments
+        </ChatBubble>
+        <img
+          src="https://image.flaticon.com/icons/png/512/1598/1598431.png"
+          className="icon"
+          alt=""
+        />
+
+        <ChatBubble>
+          Across many of these trending issues is the notion that we cannot do
+          this alone. All of our efforts require action not just by Citi, but by
+          our clients and partners as well. We have pledged to actively engage
+          with our clients on their efforts to achieve net zero, and to help
+          with their transitions, we offer a range of innovative financing
+          solutions. Over the past few years, we’ve seen increased interest in
+          incentive structures — linking financing to environmental and social
+          performance through a set of pre-determined Key Performance Indicators
+          (KPIs) — such as sustainability-linked loans and bonds, and
+          sustainable supply chain finance. We are looking closely at how
+          sustainability characteristics can be integrated into all financing
+          solutions, and how these types of incentive structures can be extended
+          to additional products. As a financial institution, we know we can
+          play an important role here by directing capital to where it can have
+          the most positive impact, and facilitating the transition to a more
+          sustainable future. I look forward to seeing how these areas evolve as
+          part of our conversations with clients, investors and partners in the
+          year ahead.
+        </ChatBubble>
+      </Story>
+      <ImageWithText
+        header="Setting a New Standard for Affordable Housing Development"
+        headerBreak={4}
+        divider
+        undertext="by Richard Gerwitz"
+        image="https://miro.medium.com/max/1000/1*lN5-RROy6TuB1cwNKu1xQA.png"
+      >
+        <Quote
+          text="2021 will be a pivotal and consequential
+year for sustainability initiatives and
+climate change. Around the world, a
+broad set of stakeholders are focusing
+their attention on the breadth of
+climate-related risks and opportunities."
+        />
+      </ImageWithText>
+      <FiftyFifty>
+        <img
+          src="https://image.flaticon.com/icons/png/512/609/609803.png"
+          className="icon"
+          alt=""
+        />
+        <Arena width="70" align="">
+          <p>
+            There’s no doubt that housing is a major issue for communities
+            throughout the United States — and that its availability and
+            location has a real impact on the financial stability of families
+            and individuals, local communities, and their economic development.
+            According to a study conducted by Stanford Economist Raj Chetty,
+            children living in lower income neighborhoods whose families were
+            able to move to areas with less poverty had earnings as adults over
+            30% higher than would have been the case had they not moved.
+          </p>
+        </Arena>
+      </FiftyFifty>
+      <ParagraphSection
+        columns={2}
+        wordLimit={80}
+        paragraph="They
+also had an increased likelihood
+of living in better neighborhoods
+themselves as adults. The Center
+for Housing Policy also found that
+the development of affordable
+housing increases spending and
+employment in the surrounding
+community, serves as an important
+source of local government revenue,
+and reduces the likelihood and the
+associated costs of foreclosure.
+These and other studies show that
+affordable housing is beneficial for
+all parties, and as essential to our
+nation’s infrastructure as roads,
+bridges, tunnels, and the energy grid.
+The COVID-19 pandemic, however,
+has made an already significant
+affordable housing crisis in the U.S.
+worse — adding to a shortage of
+over seven million affordable homes
+for the nation’s 11 million-plus lower
+income families. And with unemployment and economic hardship further
+widening the inequality gap, access
+to housing has become more vital
+than ever for struggling Americans.
+For those who are experiencing
+poverty or financial strain, a safe
+and comfortable home makes an
+immeasurable difference. At Citi, we’re committed to addressing
+this problem through our promotion
+and support of innovative building
+techniques, targeted funding, and
+strategic partnerships with local
+governments, nonprofits, and businesses. Here is just one example"
+      />
+      <Story>
+        <img
+          src="https://cahill-sf.com/wp-content/uploads/2020/05/833-Bryant_main_1.jpg"
+          alt=""
+        />
+
+        <ChatBubble>
+          A new affordable housing project in San Francisco, 833 Bryant, set to
+          open for residents in October 2021, includes 145 studio apartments of
+          permanent supportive housing for adults who have previously
+          experienced homelessness. The site features clean and spacious
+          apartments, and is centrally located in the South of Market area of
+          San Francisco, close to public transit, grocery stores, and community
+          parks. The ambitious project brought together Citi Community Capital,
+          Public Finance, the Municipal Sales & Trading team, as well as public
+          and private partners. Through its partnership with the City of San
+          Francisco, 833 Bryant will provide permanent affordability and high
+          quality maintenance of the building for residents.
+        </ChatBubble>
+
+        <img
+          src="https://ternercenter.berkeley.edu/wp-content/uploads/2021/02/unnamed-1024x576.jpg"
+          alt=""
+        />
+
+        <ChatBubble>
+          Among the barriers to affordable housing development in major cities
+          is the cost of construction, and the time it takes for developments to
+          be ready for residents to move in. Building a unit of affordable
+          housing through traditional means in San Francisco can cost as much as
+          $750,000 per unit, and take three years or more to build and lease,
+          making it a costly and unnecessarily prolonged process. In contrast,
+          Citi-funded 833 Bryant was built using modular construction, an
+          approach which moves much of the construction process off-site and
+          onto a factory floor. This method not only expedites the process of
+          building affordable housing in major cities, but also ensures that the
+          high standard of quality for units is upheld and that the construction
+          is uniform. Modular construction is also more eco-friendly — the
+          process reduces waste thanks to a controlled environment, uses
+          recyclable materials, and requires less energy. This is consistent
+          with Citi’s commitment to ESG. As a result of the efficiencies of
+          modular construction, the cost of the 833 Bryant project will be about
+          half the typical per unit cost of building a project in San Francisco,
+          and it is ESG at Citi 18 expected to be ready for occupancy a mere 14
+          months from bond closing. These are significant reductions in the cost
+          and time needed to complete a project of this magnitude relative to
+          traditional construction. The time and money saved will also allow 833
+          Bryant to provide affordable housing for 70 more people, for the same
+          amount of money, than a typical project.
+        </ChatBubble>
+        <img
+          src="https://media.bizj.us/view/img/10763308/factoryos011718tj-3*1200xx7301-4119-0-167.jpg"
+          alt=""
+        />
+
+        <ChatBubble>
+          The modular construction approach taken at 833 Bryant doesn’t just
+          save money and time. It creates permanent jobs in lower-cost areas. We
+          invested in Factory OS, a new company located in Vallejo, California,
+          which employs a diverse group of mostly new immigrant workers to build
+          the housing units for this building and others. These permanent jobs
+          provide vital support to the Vallejo and surrounding communities.
+          Factory OS is revolutionizing home construction using state of the art
+          technology to build multi-family modular buildings. Citi’s
+          contributions to Factory OS and 833 Bryant, while providing much
+          needed housing to San Francisco residents experiencing homelessness,
+          have also created stable jobs and stimulated the local economy in
+          Vallejo.
+        </ChatBubble>
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C4D1BAQF8XEnfXu_OQg/company-background_10000/0/1519796489707?e=2159024400&v=beta&t=easEySPp0lwdpQlQvvnXmEMFCLw5gkFV3p97FPolvmU"
+          alt=""
+        />
+
+        <ChatBubble>
+          Citi played multiple roles in the effort to construct 833 Bryant: Low
+          Income Housing Tax Credit investor, construction loan administrator,
+          and Letter of Credit provider guaranteeing construction completion.
+          Citi’s innovative approach to financing the project exemplifies our
+          strong commitment to affordable housing in low-to-moderate
+          communities, and combating homelessness in the United States. Homes
+          for the Homeless, a subsidiary of the San Francisco Housing
+          Accelerator Fund (a public/private entity for which Citi has been the
+          lead lender), acquired the site for 833 Bryant back in 2018. Then, an
+          innovative financing approach expedited and economized the
+          construction process. Homes for the Homeless advanced pre-development
+          costs to the developer, Mercy Housing, including the initial deposits
+          to Factory OS, and purchased the site, which is being leased to the
+          Mercy ownership entity. Mercy will then lease the completed project to
+          the City of San Francisco, which will sublease it back to the
+          partnership to operate. This lease/leaseback structure allows the
+          City’s lease payments to go directly to service debt on the bonds,
+          which were structured and sold to the public by Citi’s Public Finance
+          Department and Underwriting and Sales team. By virtue of San
+          Francisco’s Triple-A GO rating, the 30-year bonds were rated Aa2 by
+          Moody’s Investor Service and sold at a net interest cost of 2.91%.
+          Through its agreements with Mercy, the City is also funding all
+          operating and supportive services costs for the project. Through these
+          strategic partnerships and financing efforts, 833 Bryant was
+          constructed more quickly and efficiently than most affordable housing
+          developments in the San Francisco area, allowing residents timely
+          access to a home when they most need it.
+        </ChatBubble>
+        <img
+          src="https://image.flaticon.com/icons/png/512/3208/3208264.png"
+          className="icon"
+          alt=""
+        />
+
+        <ChatBubble>
+          As the leading funder of affordable housing development in the U.S.,
+          we strive to maximize efficiency, quality, and innovation in this
+          space. By emphasizing teamwork and marshalling internal resources,
+          through collaboration with local governments, nonprofits, and
+          partners, and with innovative financing, Citi is helping make 833
+          Bryant a shining example of what can be achieved when we address the
+          affordable housing crisis with creative and comprehensive solutions.
+        </ChatBubble>
+      </Story>
+
+      <GiantHeader
+        color="white"
+        background="black"
+        firstBreak={3}
+        text="Our Action for Racial Equity Goals"
+        undertext="An update on our progress"
+      />
+      <Story background="black">
+        <img
+          src="https://image.flaticon.com/icons/png/512/3100/3100248.png"
+          className="icon"
+          alt=""
+        />
+
+        <Achivement
+          header="More than half of the way to its $100 million commitment to
+Minority Depository Institutions (MDIs) that are expanding
+banking and credit access in communities of color."
+        ></Achivement>
+        <img
+          src="https://image.flaticon.com/icons/png/512/3090/3090712.png"
+          className="icon"
+          alt=""
+        />
+
+        <Achivement
+          header="Investing more than $200 million — out of a $550 million three-year
+commitment to affordable housing — in five equity funds that will
+be co-managed by Black investment managers to preserve multifamily affordable rental housing in cities all across the country. "
+        ></Achivement>
+        <img
+          src="https://image.flaticon.com/icons/png/512/5335/5335637.png"
+          className="icon"
+          alt=""
+        />
+
+        <Achivement
+          header="Collaborating with the cities of Los Angeles and San Jose to
+provide college savings accounts for public school students."
+        ></Achivement>
+        <img
+          src="https://cdn.britannica.com/13/126113-050-2927991E/Lyndon-B-Johnson-civil-rights-leaders-Oval-January-1964.jpg"
+          alt=""
+        />
+
+        <Achivement
+          header="Working with the National Urban League to offer the Citi®
+Access Account Package that includes no fee savings and
+checking products through its network."
+        ></Achivement>
+        <img
+          src="https://c.files.bbci.co.uk/25DB/production/_114319690_hi063258080.jpg"
+          alt=""
+        />
+
+        <Arena width="80">
+          <Header
+            size="large"
+            align="center"
+            uppercase
+            color="white"
+            text="«Action for Racial Equity was meant to be a three-year goal, but our teams have matched the urgency these issues deserve, making incredible progress towards that goal in just over six months. We are determined to do everything we can to help close the racial wealth gap in our communities and continue to do the work to become an anti-racist institution.»"
+          />
+        </Arena>
+      </Story>
+      <ImageWithText
+        header="Q&A with Karen Peetz"
+        headerBreak={2}
+        undertext="Chief Administrative Officer of Citi"
+        image="https://cdn1.i-scmp.com/sites/default/files/styles/1920x1080/public/2013/08/11/1b96610856b100759045089212adf18b.jpg?itok=mWX1NmSW"
+      >
+        <Quote
+          text="As a financial institution, we are in the risk
+business. To ensure we’re living up to the
+high standards our stakeholders rightly
+expect of us, we are embarking on a firm-wide
+transformation to create a best-in-class risk
+and control environment at Citi. Not only will
+this allow us to run an effective and efficient
+bank, but it will also enable us to innovate,
+adapt and deliver the best possible results for
+our colleagues, clients and communities."
         />
       </ImageWithText>
     </div>

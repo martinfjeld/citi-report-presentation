@@ -21,6 +21,7 @@
     overflow: hidden;
     z-index: -1;
     position: absolute;
+    border-left: 0.5rem solid var(--primary-color);
   }
 
   .image-element {
