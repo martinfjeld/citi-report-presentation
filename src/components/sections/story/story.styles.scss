@@ -1,3 +1,5 @@
+@import "../../../styles/style-variables.scss";
+
 .story {
   width: 100%;
   height: auto;
@@ -39,11 +41,21 @@
       width: 100%;
       min-height: 100vh;
       opacity: 0.5;
+      @media only screen and (max-width: $bp-small) {
+        height: 100vh;
+        width: auto;
+        min-height: auto;
+      }
     }
 
     .icon {
       width: 25%;
       min-height: auto;
+
+      @media only screen and (max-width: $bp-small) {
+        min-height: auto;
+        height: auto;
+      }
     }
   }
 

@@ -34,7 +34,7 @@ function App() {
         undertext="2020 Excutive Summary"
       />
 
-      <FiftyFifty>
+      <FiftyFifty rounded>
         <Arena width="70" align="">
           <Header size="large" text="About this summary" />
           <p>
@@ -931,23 +931,110 @@ checking products through its network."
           />
         </Arena>
       </Story>
-      <ImageWithText
-        header="Q&A with Karen Peetz"
-        headerBreak={2}
+
+      <GiantHeader
+        background="primary"
+        color="white"
+        specialDot
+        firstBreak={2}
         undertext="Chief Administrative Officer of Citi"
-        image="https://cdn1.i-scmp.com/sites/default/files/styles/1920x1080/public/2013/08/11/1b96610856b100759045089212adf18b.jpg?itok=mWX1NmSW"
-      >
+        text="Q&A with Karen Peetz"
+      />
+      <Story>
+        <ChatBubble reciever>
+          Why is creating a best-in-class risk and control environment a top
+          priority for Citi?
+        </ChatBubble>
+
+        <ChatBubble sender name="Karen">
+          We are a bank. Effectively managing our risks is our business and our
+          responsibility. By creating a best-in-class risk and control
+          environment, we are positioning our firm to better compete in a
+          digital world and simultaneously address the needs and expectations of
+          our clients, regulators and our shareholders. The COVID-19 pandemic
+          has only accelerated the transition to a digital future, and if we
+          don’t have a modern, automated infrastructure that we’re continuously
+          improving, we won’t be able to move at the pace we want. Enhancing our
+          risk and controls is also an opportunity for us to strengthen our
+          competitive advantages as the world’s most global bank. Our global
+          network, people, expertise, insights, and connectivity — these are our
+          most strategic assets that we must continue to invest in, and when we
+          reach operational excellence, we’ll be known for excellence in what we
+          do, how we do it, and who we are.
+        </ChatBubble>
+
+        <ChatBubble reciever>
+          How is Citi approaching this transformation work?
+        </ChatBubble>
+
+        <ChatBubble sender name="Karen">
+          The consent orders we received from regulators last year created the
+          urgency and framework for our transformation, but the transformation
+          encompasses more than the regulatory remediation and we’re taking a
+          holistic approach to our efforts. This work builds on the progress
+          we’ve made since the last financial crisis to make Citi simpler, safer
+          and stronger. We’re looking at our transformation as a unique
+          opportunity to make Citi more resilient and better prepared for the
+          future.
+        </ChatBubble>
+
+        <ChatBubble reciever>
+          How will Citi accomplish its transformation? What efforts are
+          underway?
+        </ChatBubble>
+        <ChatBubble sender name="Karen">
+          Instead of a fragmented approach to remediating issues, we’re looking
+          to solve the root causes of our challenges. We’re redesigning our key
+          processes from end-to-end, automating them, and ensuring we have the
+          proper controls in place. We’re also eliminating much of the
+          organizational and operational complexities that slow us down. All
+          these efforts will allow us to be simpler, which enables us to focus
+          our resources, see from endto-end, and connect different pieces more
+          easily — with better controls. We created a Transformation Steering
+          Committee, chaired by our CEO, to drive forward core areas of our
+          transformation work. These areas include efforts to identify changes
+          we need to make in our culture to increase accountability and champion
+          excellence, improve and automate controls, and modernize our data
+          infrastructure.
+        </ChatBubble>
+
+        <ChatBubble reciever>
+          What role is the CAO Office playing in these remediation efforts?
+        </ChatBubble>
+        <ChatBubble sender name="Karen">
+          Working directly with our CEO and the rest of the Executive Management
+          Team, I’m leading the program management of our transformation. That
+          means coordinating with colleagues across regions, businesses and
+          functions as we put together extremely detailed plans for this
+          multi-year effort. My office is really challenging ourselves and all
+          of the participants in these plans with some consistent governance,
+          consistent platforms, reporting — things that will really help us have
+          transparency for where we are and a roadmap for where we are going.
+        </ChatBubble>
+
+        <ChatBubble reciever>
+          How are Citi employees taking part in the transformation?
+        </ChatBubble>
+        <ChatBubble sender name="Karen">
+          All Citi employees are responsible for taking part in our
+          transformation — everyone has a role to play. That’s why one of our
+          focus areas is creating a culture of excellence. We want to enable all
+          of our colleagues to be better risk managers with direct
+          accountability for protecting the integrity of our firm. It’s really a
+          mindset shift, and once you have everyone in the company embracing
+          this culture, it absolutely makes us stronger and more likely to
+          succeed in our ambitious agenda.
+        </ChatBubble>
+      </Story>
+      <ImageWithText image="https://cdn1.i-scmp.com/sites/default/files/styles/1920x1080/public/2013/08/11/1b96610856b100759045089212adf18b.jpg?itok=mWX1NmSW">
         <Quote
-          text="As a financial institution, we are in the risk
-business. To ensure we’re living up to the
-high standards our stakeholders rightly
-expect of us, we are embarking on a firm-wide
-transformation to create a best-in-class risk
-and control environment at Citi. Not only will
-this allow us to run an effective and efficient
-bank, but it will also enable us to innovate,
-adapt and deliver the best possible results for
-our colleagues, clients and communities."
+          text="All Citi employees are
+responsible for taking part
+in our transformation —
+everyone has a role to play.
+That’s why one of our focus
+areas is creating a culture
+of excellence."
         />
       </ImageWithText>
     </div>

@@ -1,11 +1,31 @@
 .chatbubble {
-  background-color: var(--primary-color);
-  color: #bde0ff;
   border-radius: 3rem;
   padding: 2rem;
-  width: 70%;
+  width: auto;
+  max-width: 70%;
+  background-color: var(--primary-color);
+  color: #bde0ff;
   border-left: 1px solid #003a6d;
   border-right: 1px solid #003a6d;
   border-bottom: 3px solid #003a6d;
   border-bottom-left-radius: 0;
+}
+
+.sender {
+  background-color: var(--primary-color);
+  color: #bde0ff;
+  border-left: 1px solid #003a6d;
+  border-right: 1px solid #003a6d;
+  border-bottom: 3px solid #003a6d;
+  border-bottom-left-radius: 0;
+}
+
+.reciever {
+  background-color: #bde0ff;
+  color: var(--primary-color);
+  border-left: 1px solid #89a7c2;
+  border-right: 1px solid #89a7c2;
+  border-bottom: 3px solid #89a7c2;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 3rem;
 }

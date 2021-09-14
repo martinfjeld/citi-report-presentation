@@ -43,6 +43,11 @@
     width: auto;
     text-transform: uppercase;
     font-size: 5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+      font-weight: 900;
+    }
   }
 
   .quote {
@@ -62,6 +67,11 @@
       border-bottom: 3px solid #eee;
       box-shadow: none;
       color: #fff;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 0.9rem;
+        width: 90%;
+      }
     }
     p:before {
       content: "«";
@@ -80,13 +90,18 @@
   .full-page-image {
     width: 100%;
     min-height: 100vh;
-
     position: absolute;
     top: 0%;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: -1;
     opacity: 0;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 100vh;
+      min-height: auto;
+      width: auto;
+    }
   }
 
   .paragraphs-container {

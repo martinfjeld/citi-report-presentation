@@ -1,9 +1,14 @@
+@import "../../../styles/style-variables.scss";
 .arena {
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   margin: 5rem auto;
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 10px;
+  }
 }
 
 .inverted {
