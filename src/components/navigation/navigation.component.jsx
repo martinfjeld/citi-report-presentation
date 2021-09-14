@@ -26,9 +26,6 @@ export const NavigationBar = ({ logo, links }) => {
 
   return (
     <div className="navigation-bar">
-      <div className="navigation-bar__logo">
-        <img src={logo} alt="logo" />
-      </div>
       {links && (
         <div className="navigation-bar__links" onClick={handleClick}>
           <div className="burger">

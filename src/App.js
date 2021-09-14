@@ -1,17 +1,15 @@
 import "./App.css";
+import "./styles/style-variables.scss";
 import { NavigationBar } from "./components/navigation/navigation.component";
 import { GiantHeader } from "./components/typography/headers/giant-header/giant-header.component";
 import { ParagraphSection } from "./components/sections/paragraph-section/paragraph-section.component";
-
 import { Story } from "./components/sections/story/story.component";
 import { Quote } from "./components/typography/quote/quote.component";
 import { Header } from "./components/typography/headers/header/header.component";
 import { ImageWithText } from "./components/sections/image-with-text/image-with-text.component";
-import "./styles/style-variables.scss";
 import { Arena } from "./components/sections/arena/arena.component";
 import { FiftyFifty } from "./components/sections/fifty-fifty/fifty-fifty.component";
 import { Achivement } from "./components/elements/achivement/achivement.component";
-import { CitiDivider } from "./components/dividers/citi-divider/citi-divider.component";
 import { ChatBubble } from "./components/elements/chatbubble/chatbubble.component";
 
 function App() {
@@ -97,6 +95,7 @@ toughest problems."
       </FiftyFifty>
       <ParagraphSection
         columns={2}
+        wordLimit={70}
         paragraph="With trust in public institutions at record lows, there is greater opportunity for those of us in the private sector to step up and lead. One of the most urgent issues we can help to address Letter from Our CEO, Jane Fraser is confronting climate change. We are pleased to see the U.S. rejoin the Paris Agreement, and we are committed to doing our part. In 2020, in the midst of the pandemic, we announced our 2025 Sustainable Progress Strategy. At its heart is a five-year commitment to finance and facilitate $250 billion in environmental activities. In conjunction with this ambitious climate finance goal, we’re working with our clients to evaluate their climate risks and vulnerabilities while continuing to minimize our own company’s direct impacts on the planet. Earlier this year, on my first day as CEO, we committed Citi to net zero emissions by 2050. For us, the transition to more sustainable business practices mitigates risk and can be another competitive advantage. Building on these goals, we recently took another step and committed $1 trillion to sustainable finance by 2030, aligning with the agenda of the United Nations’ Sustainable Development Goals. This commitment includes extending our environmental finance target from $250 billion by 2025 to $500 billion by 2030, as well as an additional $500 billion for investments in other important areas such as education, affordable housing, health care, economic inclusion, racial diversity and gender equality. It’s a significant effort that expands on our many initiatives to help ensure a more sustainable and equitable future, especially as we continue to tackle challenges posed by COVID-19. As one example, last year we were selected by Gavi, the Global Vaccine Alliance, as sole financial advisor to the COVAX Facility to support the fair and equitable distribution of vaccines worldwide."
       />
       <FiftyFifty>
@@ -132,6 +131,7 @@ toughest problems."
 
       <ParagraphSection
         columns={2}
+        wordLimit={70}
         paragraph="In January 2020, we
 launched the Citi Impact Fund with
 $150 million in capital for startups,
@@ -870,7 +870,7 @@ governments, nonprofits, and businesses. Here is just one example"
         color="white"
         background="black"
         firstBreak={3}
-        text="Our Action for Racial Equity Goals"
+        text="Our Action for Racial Equity Goals."
         undertext="An update on our progress"
       />
       <Story background="black">
@@ -1026,7 +1026,10 @@ checking products through its network."
           succeed in our ambitious agenda.
         </ChatBubble>
       </Story>
-      <ImageWithText image="https://cdn1.i-scmp.com/sites/default/files/styles/1920x1080/public/2013/08/11/1b96610856b100759045089212adf18b.jpg?itok=mWX1NmSW">
+      <ImageWithText
+        header=" "
+        image="https://cdn1.i-scmp.com/sites/default/files/styles/1920x1080/public/2013/08/11/1b96610856b100759045089212adf18b.jpg?itok=mWX1NmSW"
+      >
         <Quote
           text="All Citi employees are
 responsible for taking part
