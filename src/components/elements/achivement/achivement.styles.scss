@@ -17,7 +17,9 @@
   @media only screen and (max-width: $bp-small) {
     padding: 0px;
     flex-direction: column;
-    width: 100% !important;
+    width: 90%;
+    background-color: none;
+    box-shadow: none;
   }
 
   &__image {
@@ -29,9 +31,9 @@
     flex: 0 0 20%;
 
     @media only screen and (max-width: $bp-small) {
-      padding: 10px;
+      padding: 1rem;
       flex-direction: column;
-      width: 10% !important;
+      width: 30% !important;
     }
 
     img {
@@ -44,10 +46,17 @@
 
     & > * {
       padding: 1rem;
+
+      @media only screen and (max-width: $bp-small) {
+        padding: 0px;
+      }
     }
 
     h3 {
       font-size: 1.6rem;
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.3rem;
+      }
     }
 
     ul {

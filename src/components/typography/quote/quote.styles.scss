@@ -1,3 +1,5 @@
+@import "../../../styles/style-variables.scss";
+
 .quote {
   p {
     width: 70%;
@@ -15,6 +17,12 @@
     border-bottom: 3px solid #eee;
     box-shadow: none;
     color: #fff;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.6rem !important;
+      width: auto;
+      min-height: auto;
+    }
   }
   p:before {
     content: "«";
