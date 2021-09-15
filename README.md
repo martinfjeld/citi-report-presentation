@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Citi report (study case)
 
 <img width="1440" alt="Skjermbilde 2021-09-15 kl  14 08 35" src="https://user-images.githubusercontent.com/4175275/133431015-e460e484-edc9-47f8-a4d1-40f44f7c97ae.png">
 
